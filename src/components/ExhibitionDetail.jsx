@@ -57,14 +57,15 @@ function ExhibitionDetail() {
             </div>
 
             <div style={style.detailposter}>
-                <img
-                    src={exhibition.detailposter}
-                    alt="상세 이미지"
-                    style={{
-                        width: "100%",
-                        objectFit: "contain",
-                        borderRadius: "10px"
-                    }}/>
+<img
+    src={process.env.PUBLIC_URL + exhibition.detailposter}
+    alt="상세 이미지"
+    style={{
+        width: "100%",
+        objectFit: "contain",
+        borderRadius: "10px"
+    }}
+/>
             </div>
 
             <div style={style.relatedSection}>
